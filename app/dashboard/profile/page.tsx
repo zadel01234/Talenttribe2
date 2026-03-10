@@ -481,7 +481,7 @@ export default function MultiStepForm() {
   const { user } = useUser();
   const [loading, setLoading] = useState(false);
   const [institutions, setInstitutions] = useState<Institution[]>([]);
- 
+
   const [formData, setFormData] = useState({
     full_name: user?.full_name || "",
     phone: user?.phone || "",
@@ -520,7 +520,7 @@ export default function MultiStepForm() {
       ...prev,
       [name]: type === "date" ? value : value,
     }));
-  }; 
+  };
 
   const nextStep = () => setStep((prev) => prev + 1);
   const prevStep = () => setStep((prev) => prev - 1);
@@ -584,9 +584,8 @@ export default function MultiStepForm() {
           {[1, 2, 3].map((i) => (
             <div
               key={i}
-              className={`h-2 flex-1 rounded-full transition-all duration-300 ${
-                i <= step ? 'bg-gradient-to-r from-red-600 to-red-700' : 'bg-gray-200'
-              }`}
+              className={`h-2 flex-1 rounded-full transition-all duration-300 ${i <= step ? 'bg-gradient-to-r from-red-600 to-red-700' : 'bg-gray-200'
+                }`}
             />
           ))}
         </div>
@@ -609,7 +608,7 @@ export default function MultiStepForm() {
                 <span className="bg-red-100 text-red-600 w-8 h-8 rounded-full flex items-center justify-center text-sm font-bold">1</span>
                 Personal Information
               </h3>
-              
+
               <div className="space-y-4 max-h-[450px] overflow-y-auto pr-2">
                 <div>
                   <label className="block text-sm font-semibold text-gray-700 mb-2">Full Name</label>
@@ -626,24 +625,24 @@ export default function MultiStepForm() {
 
                 <div>
                   <label className="block text-sm font-semibold text-gray-700 mb-2">Phone Number</label>
-                  <input 
-                    type="text" 
-                    name="phone" 
-                    placeholder="Enter your phone number" 
-                    className="w-full px-4 py-3 border-2 border-gray-200 rounded-lg focus:border-red-500 focus:ring-2 focus:ring-red-200 outline-none transition-all" 
-                    onChange={handleChange} 
-                    value={formData.phone} 
+                  <input
+                    type="text"
+                    name="phone"
+                    placeholder="Enter your phone number"
+                    className="w-full px-4 py-3 border-2 border-gray-200 rounded-lg focus:border-red-500 focus:ring-2 focus:ring-red-200 outline-none transition-all"
+                    onChange={handleChange}
+                    value={formData.phone}
                   />
                 </div>
 
                 <div>
                   <label className="block text-sm font-semibold text-gray-700 mb-2">Date of Birth</label>
-                  <input 
-                    type="date" 
-                    name="date_of_birth" 
-                    className="w-full px-4 py-3 border-2 border-gray-200 rounded-lg focus:border-red-500 focus:ring-2 focus:ring-red-200 outline-none transition-all" 
-                    onChange={handleChange}  
-                    value={formData.date_of_birth} 
+                  <input
+                    type="date"
+                    name="date_of_birth"
+                    className="w-full px-4 py-3 border-2 border-gray-200 rounded-lg focus:border-red-500 focus:ring-2 focus:ring-red-200 outline-none transition-all"
+                    onChange={handleChange}
+                    value={formData.date_of_birth}
                   />
                 </div>
 
@@ -677,31 +676,31 @@ export default function MultiStepForm() {
 
                 <div>
                   <label className="block text-sm font-semibold text-gray-700 mb-2">Skills (comma separated)</label>
-                  <input 
-                    type="text" 
-                    name="skills" 
-                    placeholder="e.g., React, Node.js, Python" 
-                    className="w-full px-4 py-3 border-2 border-gray-200 rounded-lg focus:border-red-500 focus:ring-2 focus:ring-red-200 outline-none transition-all" 
-                    onChange={handleChange} 
-                    value={formData.skills} 
+                  <input
+                    type="text"
+                    name="skills"
+                    placeholder="e.g., React, Node.js, Python"
+                    className="w-full px-4 py-3 border-2 border-gray-200 rounded-lg focus:border-red-500 focus:ring-2 focus:ring-red-200 outline-none transition-all"
+                    onChange={handleChange}
+                    value={formData.skills}
                   />
                 </div>
 
                 <div>
                   <label className="block text-sm font-semibold text-gray-700 mb-2">Bio</label>
-                  <textarea 
-                    name="bio"  
-                    placeholder="Tell us about yourself" 
-                    className="w-full px-4 py-3 border-2 border-gray-200 rounded-lg focus:border-red-500 focus:ring-2 focus:ring-red-200 outline-none transition-all resize-none" 
-                    onChange={handleChange} 
+                  <textarea
+                    name="bio"
+                    placeholder="Tell us about yourself"
+                    className="w-full px-4 py-3 border-2 border-gray-200 rounded-lg focus:border-red-500 focus:ring-2 focus:ring-red-200 outline-none transition-all resize-none"
+                    onChange={handleChange}
                     value={formData.bio}
                     rows={4}
                   ></textarea>
                 </div>
               </div>
-              
-              <button 
-                onClick={nextStep} 
+
+              <button
+                onClick={nextStep}
                 className="mt-6 w-full bg-gradient-to-r from-red-600 to-red-700 hover:from-red-700 hover:to-red-800 text-white font-semibold py-3 px-6 rounded-lg transition-all duration-200 shadow-md hover:shadow-lg transform hover:-translate-y-0.5"
               >
                 Next Step →
@@ -723,14 +722,14 @@ export default function MultiStepForm() {
                 <span className="bg-red-100 text-red-600 w-8 h-8 rounded-full flex items-center justify-center text-sm font-bold">2</span>
                 School/Institution
               </h3>
-              
+
               <div className="space-y-4 max-h-[450px] overflow-y-auto pr-2">
                 <div>
                   <label className="block text-sm font-semibold text-gray-700 mb-2">Institution</label>
-                  <select 
-                    name="institution" 
-                    className="w-full px-4 py-3 border-2 border-gray-200 rounded-lg focus:border-red-500 focus:ring-2 focus:ring-red-200 outline-none transition-all bg-white" 
-                    value={formData.institution} 
+                  <select
+                    name="institution"
+                    className="w-full px-4 py-3 border-2 border-gray-200 rounded-lg focus:border-red-500 focus:ring-2 focus:ring-red-200 outline-none transition-all bg-white"
+                    value={formData.institution}
                     onChange={handleChange}
                   >
                     <option value="" className="text-gray-400">Select Institution</option>
@@ -744,22 +743,22 @@ export default function MultiStepForm() {
 
                 <div>
                   <label className="block text-sm font-semibold text-gray-700 mb-2">Department</label>
-                  <input 
-                    type="text" 
-                    name="department" 
-                    placeholder="Enter your department" 
-                    className="w-full px-4 py-3 border-2 border-gray-200 rounded-lg focus:border-red-500 focus:ring-2 focus:ring-red-200 outline-none transition-all" 
-                    onChange={handleChange} 
+                  <input
+                    type="text"
+                    name="department"
+                    placeholder="Enter your department"
+                    className="w-full px-4 py-3 border-2 border-gray-200 rounded-lg focus:border-red-500 focus:ring-2 focus:ring-red-200 outline-none transition-all"
+                    onChange={handleChange}
                     value={formData.department}
                   />
                 </div>
 
                 <div>
                   <label className="block text-sm font-semibold text-gray-700 mb-2">Education Level</label>
-                  <select 
-                    name="education_level" 
-                    className="w-full px-4 py-3 border-2 border-gray-200 rounded-lg focus:border-red-500 focus:ring-2 focus:ring-red-200 outline-none transition-all bg-white" 
-                    value={formData.education_level} 
+                  <select
+                    name="education_level"
+                    className="w-full px-4 py-3 border-2 border-gray-200 rounded-lg focus:border-red-500 focus:ring-2 focus:ring-red-200 outline-none transition-all bg-white"
+                    value={formData.education_level}
                     onChange={handleChange}
                   >
                     <option value="" className="text-gray-400">Select Level</option>
@@ -775,14 +774,14 @@ export default function MultiStepForm() {
               </div>
 
               <div className="flex gap-4 mt-6">
-                <button 
-                  onClick={prevStep} 
+                <button
+                  onClick={prevStep}
                   className="flex-1 bg-gray-200 hover:bg-gray-300 text-gray-700 font-semibold py-3 px-6 rounded-lg transition-all duration-200"
                 >
                   ← Back
                 </button>
-                <button 
-                  onClick={nextStep} 
+                <button
+                  onClick={nextStep}
                   className="flex-1 bg-gradient-to-r from-red-600 to-red-700 hover:from-red-700 hover:to-red-800 text-white font-semibold py-3 px-6 rounded-lg transition-all duration-200 shadow-md hover:shadow-lg"
                 >
                   Next Step →
@@ -805,14 +804,14 @@ export default function MultiStepForm() {
                 <span className="bg-red-100 text-red-600 w-8 h-8 rounded-full flex items-center justify-center text-sm font-bold">3</span>
                 Address Information
               </h3>
-              
+
               <div className="space-y-4 max-h-[450px] overflow-y-auto pr-2">
                 <div>
                   <label className="block text-sm font-semibold text-gray-700 mb-2">Local Government Area (LGA)</label>
-                  <select 
-                    name="lga" 
-                    value={formData.lga} 
-                    onChange={handleChange} 
+                  <select
+                    name="lga"
+                    value={formData.lga}
+                    onChange={handleChange}
                     className="w-full px-4 py-3 border-2 border-gray-200 rounded-lg focus:border-red-500 focus:ring-2 focus:ring-red-200 outline-none transition-all bg-white"
                   >
                     <option value="" className="text-gray-400">Select LGA</option>
@@ -853,27 +852,27 @@ export default function MultiStepForm() {
 
                 <div>
                   <label className="block text-sm font-semibold text-gray-700 mb-2">City</label>
-                  <input 
-                    type="text" 
-                    name="city" 
-                    placeholder="Enter your city" 
-                    className="w-full px-4 py-3 border-2 border-gray-200 rounded-lg focus:border-red-500 focus:ring-2 focus:ring-red-200 outline-none transition-all" 
-                    onChange={handleChange} 
-                    value={formData.city} 
+                  <input
+                    type="text"
+                    name="city"
+                    placeholder="Enter your city"
+                    className="w-full px-4 py-3 border-2 border-gray-200 rounded-lg focus:border-red-500 focus:ring-2 focus:ring-red-200 outline-none transition-all"
+                    onChange={handleChange}
+                    value={formData.city}
                   />
                 </div>
               </div>
 
               <div className="flex gap-4 mt-6">
-                <button 
-                  onClick={prevStep} 
+                <button
+                  onClick={prevStep}
                   className="flex-1 bg-gray-200 hover:bg-gray-300 text-gray-700 font-semibold py-3 px-6 rounded-lg transition-all duration-200"
                 >
                   ← Back
                 </button>
-                <button 
-                  className={`flex-1 bg-gradient-to-r from-red-600 to-red-700 hover:from-red-700 hover:to-red-800 text-white font-semibold py-3 px-6 rounded-lg transition-all duration-200 shadow-md hover:shadow-lg flex items-center justify-center gap-2 ${loading ? "opacity-70 cursor-not-allowed" : ""}`} 
-                  onClick={updateUser} 
+                <button
+                  className={`flex-1 bg-gradient-to-r from-red-600 to-red-700 hover:from-red-700 hover:to-red-800 text-white font-semibold py-3 px-6 rounded-lg transition-all duration-200 shadow-md hover:shadow-lg flex items-center justify-center gap-2 ${loading ? "opacity-70 cursor-not-allowed" : ""}`}
+                  onClick={updateUser}
                   disabled={loading}
                 >
                   {loading ? "Updating..." : "Update Profile"}
