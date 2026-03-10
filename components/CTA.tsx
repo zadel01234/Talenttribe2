@@ -26,7 +26,7 @@ export default function CTA() {
             Join Community Now →
           </a>
           <a
-            href="/donate"
+            href="https://atcafrica.com/donate"
             style={{ background: 'transparent', color: '#3d0000', fontFamily: 'Space Grotesk', fontWeight: 700, fontSize: '15px', padding: '18px 48px', borderRadius: '4px', border: '2px solid rgba(61,0,0,0.3)', textDecoration: 'none', transition: 'all 0.2s' }}
           >
             Donate For a Talent

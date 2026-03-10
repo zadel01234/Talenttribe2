@@ -25,7 +25,7 @@ const SOCIAL: SocialLink[] = [
   { icon: Facebook, href: 'https://facebook.com/oyotalenttribehq' },
   { icon: Instagram, href: 'https://instagram.com/oyotalenttribehq' },
   { icon: Linkedin, href: 'https://linkedin.com/company/oyotalenttribehq' },
-  { icon: Slack, href: 'https://slack.com' },
+  { icon: Slack, href: process.env.NEXT_PUBLIC_COMMUNITY_URL || '/community' },
   { icon: Twitter, href: 'https://x.com/oyotalenttribehq' },
 ]
 
@@ -56,7 +56,7 @@ const COLS: FooterCol[] = [
     links: [
       { label: 'Become A Member', href: '/register' },
       { label: 'Login', href: '/login' },
-      { label: 'Donate For a Talent', href: '/donate' },
+      { label: 'Donate For a Talent', href: 'https://atcafrica.com/donate' },
       { label: 'Become A Partner', href: '/partner' },
       { label: 'Contact', href: 'contact' },
     ],

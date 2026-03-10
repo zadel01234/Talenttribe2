@@ -93,7 +93,7 @@ export default function Hero() {
                   </svg>
                 </a>
                 <a
-                  href="/donate"
+                  href="https://atcafrica.com/donate"
                   style={{ background: 'rgba(245,160,0,0.08)', border: '1px solid rgba(245,160,0,0.2)', color: '#f5a000', fontFamily: 'Space Grotesk', fontWeight: 600, fontSize: '13px', padding: '16px 28px', borderRadius: '4px', letterSpacing: '0.04em', transition: 'all 0.2s', textDecoration: 'none' }}
                 >
                   Donate For a Talent ♥
