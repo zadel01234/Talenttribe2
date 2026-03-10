@@ -140,12 +140,12 @@
 //           {isLight ? (
 //             <>
 //               <a
-//                 href="/register"
+//                 href="/Become A Member"
 //                 style={{ display: 'inline-block', padding: '8px 20px', borderRadius: '6px', fontSize: '13px', fontFamily: 'Montserrat', fontWeight: 600, color: '#f5a000', border: '1.5px solid #f5a000', textDecoration: 'none', transition: 'background 0.2s, color 0.2s', background: 'transparent' }}
 //                 onMouseEnter={(e) => { e.currentTarget.style.background = '#f5a000'; e.currentTarget.style.color = '#fff' }}
 //                 onMouseLeave={(e) => { e.currentTarget.style.background = 'transparent'; e.currentTarget.style.color = '#f5a000' }}
 //               >
-//                 Register
+//                 Become A Member
 //               </a>
 //               <a
 //                 href="/login"
@@ -156,7 +156,7 @@
 //             </>
 //           ) : (
 //             <>
-//               <a href="/register" className="btn-outline px-5 py-2.5 rounded text-sm">Register</a>
+//               <a href="/Become A Member" className="btn-outline px-5 py-2.5 rounded text-sm">Become A Member</a>
 //               <a href="/login" className="btn-orange px-5 py-2.5 rounded text-sm">Login</a>
 //             </>
 //           )}
@@ -211,8 +211,8 @@
 //             )
 //           )}
 //           <div className="flex gap-3 mt-4">
-//             <a href="/register" style={{ flex: 1, textAlign: 'center', padding: '10px', borderRadius: '6px', fontSize: '13px', fontFamily: 'Montserrat', fontWeight: 600, color: '#f5a000', border: '1.5px solid #f5a000', textDecoration: 'none' }}>
-//               Register
+//             <a href="/Become A Member" style={{ flex: 1, textAlign: 'center', padding: '10px', borderRadius: '6px', fontSize: '13px', fontFamily: 'Montserrat', fontWeight: 600, color: '#f5a000', border: '1.5px solid #f5a000', textDecoration: 'none' }}>
+//               Become A Member
 //             </a>
 //             <a href="/login" style={{ flex: 1, textAlign: 'center', padding: '10px', borderRadius: '6px', fontSize: '13px', fontFamily: 'Montserrat', fontWeight: 600, color: '#fff', background: '#f5a000', textDecoration: 'none' }}>
 //               Login
@@ -426,7 +426,7 @@
 //           {isLight ? (
 //             <>
 //               <a
-//                 href="https://talenttribe.atcafrica.com/register"
+//                 href="https://talenttribe.atcafrica.com/Become A Member"
 //                 style={{
 //                   display: "inline-block",
 //                   padding: "8px 20px",
@@ -449,7 +449,7 @@
 //                   e.currentTarget.style.color = "#f5a000";
 //                 }}
 //               >
-//                 Register
+//                 Become A Member
 //               </a>
 //               <a
 //                 href="https://talenttribe.atcafrica.com/login"
@@ -471,8 +471,8 @@
 //             </>
 //           ) : (
 //             <>
-//               <a href="https://talenttribe.atcafrica.com/register" className="btn-outline px-5 py-2.5 rounded text-sm">
-//                 Register
+//               <a href="https://talenttribe.atcafrica.com/Become A Member" className="btn-outline px-5 py-2.5 rounded text-sm">
+//                 Become A Member
 //               </a>
 //               <a href="https://talenttribe.atcafrica.com/login" className="btn-orange px-5 py-2.5 rounded text-sm">
 //                 Login
@@ -538,7 +538,7 @@
 //           )}
 //           <div className="flex gap-3 mt-4">
 //             <a
-//               href="https://talenttribe.atcafrica.com/register"
+//               href="https://talenttribe.atcafrica.com/Become A Member"
 //               style={{
 //                 flex: 1,
 //                 textAlign: "center",
@@ -552,7 +552,7 @@
 //                 textDecoration: "none",
 //               }}
 //             >
-//               Register
+//               Become A Member
 //             </a>
 //             <a
 //               href="https://talenttribe.atcafrica.com/login"
@@ -725,12 +725,12 @@
 //           {isLight ? (
 //             <>
 //               <a
-//                 href="/register"
+//                 href="/Become A Member"
 //                 style={{ display: 'inline-block', padding: '8px 20px', borderRadius: '6px', fontSize: '13px', fontFamily: 'Montserrat', fontWeight: 600, color: '#f5a000', border: '1.5px solid #f5a000', textDecoration: 'none', transition: 'background 0.2s, color 0.2s', background: 'transparent' }}
 //                 onMouseEnter={(e) => { e.currentTarget.style.background = '#f5a000'; e.currentTarget.style.color = '#fff' }}
 //                 onMouseLeave={(e) => { e.currentTarget.style.background = 'transparent'; e.currentTarget.style.color = '#f5a000' }}
 //               >
-//                 Register
+//                 Become A Member
 //               </a>
 //               <a
 //                 href="/login"
@@ -741,7 +741,7 @@
 //             </>
 //           ) : (
 //             <>
-//               <a href="/register" className="btn-outline px-5 py-2.5 rounded text-sm">Register</a>
+//               <a href="/Become A Member" className="btn-outline px-5 py-2.5 rounded text-sm">Become A Member</a>
 //               <a href="/login" className="btn-orange px-5 py-2.5 rounded text-sm">Login</a>
 //             </>
 //           )}
@@ -796,8 +796,8 @@
 //             )
 //           )}
 //           <div className="flex gap-3 mt-4">
-//             <a href="/register" style={{ flex: 1, textAlign: 'center', padding: '10px', borderRadius: '6px', fontSize: '13px', fontFamily: 'Montserrat', fontWeight: 600, color: '#f5a000', border: '1.5px solid #f5a000', textDecoration: 'none' }}>
-//               Register
+//             <a href="/Become A Member" style={{ flex: 1, textAlign: 'center', padding: '10px', borderRadius: '6px', fontSize: '13px', fontFamily: 'Montserrat', fontWeight: 600, color: '#f5a000', border: '1.5px solid #f5a000', textDecoration: 'none' }}>
+//               Become A Member
 //             </a>
 //             <a href="/login" style={{ flex: 1, textAlign: 'center', padding: '10px', borderRadius: '6px', fontSize: '13px', fontFamily: 'Montserrat', fontWeight: 600, color: '#fff', background: '#f5a000', textDecoration: 'none' }}>
 //               Login
@@ -962,7 +962,7 @@ export default function Nav({ lightBackground = false }: NavProps) {
                 onMouseEnter={(e) => { e.currentTarget.style.background = '#f5a000'; e.currentTarget.style.color = '#fff' }}
                 onMouseLeave={(e) => { e.currentTarget.style.background = 'transparent'; e.currentTarget.style.color = '#f5a000' }}
               >
-                Register
+                Become A Member
               </a>
               <a
                 href="/login"
@@ -973,7 +973,7 @@ export default function Nav({ lightBackground = false }: NavProps) {
             </>
           ) : (
             <>
-              <a href="/register" className="btn-outline px-5 py-2.5 rounded text-sm">Register</a>
+              <a href="/register" className="btn-outline px-5 py-2.5 rounded text-sm">Become A Member</a>
               <a href="/login" className="btn-orange px-5 py-2.5 rounded text-sm">Login</a>
             </>
           )}
@@ -1029,7 +1029,7 @@ export default function Nav({ lightBackground = false }: NavProps) {
           )}
           <div className="flex gap-3 mt-4">
             <a href="/register" style={{ flex: 1, textAlign: 'center', padding: '10px', borderRadius: '6px', fontSize: '13px', fontFamily: 'Montserrat', fontWeight: 600, color: '#f5a000', border: '1.5px solid #f5a000', textDecoration: 'none' }}>
-              Register
+              Become A Member
             </a>
             <a href="/login" style={{ flex: 1, textAlign: 'center', padding: '10px', borderRadius: '6px', fontSize: '13px', fontFamily: 'Montserrat', fontWeight: 600, color: '#fff', background: '#f5a000', textDecoration: 'none' }}>
               Login

@@ -44,8 +44,8 @@ const COLS: FooterCol[] = [
   {
     title: 'Programs',
     links: [
-      { label: 'SheInnovates', href: '/sheinnovates' },
-      { label: 'BuildWithOyo', href: 'build.talenxify.com' },
+      { label: 'SheInnovates', href: 'https://sit.atcafrica.com' },
+      { label: 'BuildWithOyo', href: 'https://talenttribe.atcafrica.com' },
       { label: 'Technical Series', href: '/technical-series' },
       { label: 'Hackathons', href: '/hackathons' },
       { label: 'Mentorship', href: '/mentorship' },
@@ -54,10 +54,10 @@ const COLS: FooterCol[] = [
   {
     title: 'Connect',
     links: [
-      { label: 'Register', href: '/register' },
+      { label: 'Become A Member', href: '/register' },
       { label: 'Login', href: '/login' },
       { label: 'Donate For a Talent', href: '/donate' },
-      { label: 'Partner With Us', href: '/partner' },
+      { label: 'Become A Partner', href: '/partner' },
       { label: 'Contact', href: 'contact' },
     ],
   },

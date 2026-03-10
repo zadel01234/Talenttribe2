@@ -137,6 +137,9 @@ export default function Community() {
           <p className="text-lg leading-relaxed">
             We encourage knowledge-sharing and innovation within these chapters in our designated regions.
           </p>
+          <a href={process.env.NEXT_PUBLIC_COMMUNITY_URL} className="mt-8 btn-orange px-8 py-4 rounded text-sm inline-block ">
+                        Join our Community →
+                      </a>
         </div>
       </main>
 

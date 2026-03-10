@@ -96,7 +96,7 @@ export default function Partners() {
           PARTNERS
         </span>
         <p className="text-base md:text-xl text-gray-900 mb-10 md:mb-16 font-medium" style={{ fontFamily: 'Space Grotesk' }}>
-          Meet our Official Partners for Build with Oyo
+          Meet our Official Partners
         </p>
 
         {/* Desktop/Tablet: 2 Rows */}

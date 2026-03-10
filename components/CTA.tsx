@@ -20,7 +20,7 @@ export default function CTA() {
 
         <div className="mt-10 flex flex-wrap gap-4 justify-center">
           <a
-            href="/community"
+            href={process.env.NEXT_PUBLIC_COMMUNITY_URL}
             style={{ background: '#3d0000', color: '#f5a000', fontFamily: 'Space Grotesk', fontWeight: 700, fontSize: '15px', padding: '18px 48px', borderRadius: '4px', textDecoration: 'none', display: 'inline-flex', alignItems: 'center', gap: '8px', transition: 'all 0.2s' }}
           >
             Join Community Now →
@@ -29,7 +29,7 @@ export default function CTA() {
             href="/donate"
             style={{ background: 'transparent', color: '#3d0000', fontFamily: 'Space Grotesk', fontWeight: 700, fontSize: '15px', padding: '18px 48px', borderRadius: '4px', border: '2px solid rgba(61,0,0,0.3)', textDecoration: 'none', transition: 'all 0.2s' }}
           >
-            Donate a Talent
+            Donate For a Talent
           </a>
         </div>
 

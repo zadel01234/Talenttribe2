@@ -20,7 +20,7 @@ const PROGRAMS: Program[] = [
     color: '#e0005a',
     desc: 'A dedicated initiative designed to empower women and bridge the gender gap in the technology sector.',
     badge: 'Initiative',
-    href: '/sheinnovates',
+    href: 'https://sit.atcafrica.com',
   },
   {
     name: 'BuildWithOyo',
@@ -29,7 +29,7 @@ const PROGRAMS: Program[] = [
     color: '#c47f00',
     desc: 'Our flagship annual program focused on discovering, developing, and nurturing tech talent across Oyo State.',
     badge: 'Annual Program',
-    href: '/buildwithoyo',
+    href: 'https://talenttribe.atcafrica.com',
   },
   {
     name: 'Technical Series',

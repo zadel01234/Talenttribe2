@@ -8,10 +8,10 @@ interface Chapter {
 }
 
 const CHAPTERS: Chapter[] = [
-  { city: 'Ibadan', tag: 'Main Chapter', count: '450+', color: '#c47f00' },
-  { city: 'Ogbomoso', tag: 'Growth Chapter', count: '180+', color: '#a07800' },
-  { city: 'Oyo Town', tag: 'Emerging Chapter', count: '95+', color: '#c47f00' },
-  { city: 'Iseyin', tag: 'New Chapter', count: '60+', color: '#a07800' },
+  { city: 'Ibadan', tag: 'Main Chapter', count: '1500+', color: '#c47f00' },
+  { city: 'Ogbomoso', tag: 'Growth Chapter', count: '1000+', color: '#a07800' },
+  { city: 'Oyo Town', tag: 'Emerging Chapter', count: '500+', color: '#c47f00' },
+  { city: 'Iseyin', tag: 'New Chapter', count: '500+', color: '#a07800' },
   { city: 'Saki', tag: 'Upcoming', count: 'Coming', color: '#c47f00' },
   { city: 'Eruwa', tag: 'Upcoming', count: 'Coming', color: '#a07800' },
 ]

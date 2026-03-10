@@ -12,17 +12,17 @@ interface Stat {
 }
 
 const NICHES: Niche[] = [
-  { name: 'Web3 & Blockchain', count: '50+', icon: '' },
-  { name: 'AI & Machine Learning', count: '100+', icon: '' },
-  { name: 'Product & Design', count: '70+', icon: '' },
-  { name: 'Founders & Startups', count: '100+', icon: '' },
-  { name: 'Open Source', count: '100+', icon: '' },
+  { name: 'Web3 & Blockchain', count: '500+', icon: '' },
+  { name: 'AI & Machine Learning', count: '1000+', icon: '' },
+  { name: 'Product & Design', count: '3000+', icon: '' },
+  { name: 'Founders & Startups', count: '200+', icon: '' },
+  { name: 'Open Source', count: '300+', icon: '' },
 ]
 
 const STATS: Stat[] = [
   { num: '1,200+', label: 'Total Members' },
-  { num: '48', label: 'Events Hosted' },
-  { num: '12', label: 'Active Chapters' },
+  { num: '10+', label: 'Events Hosted' },
+  { num: '12+', label: 'Active Chapters' },
   { num: '30+', label: 'Partner Orgs' },
 ]
 
@@ -52,7 +52,7 @@ export default function Community() {
             <p className="mt-6 leading-relaxed" style={{ fontFamily: 'Montserrat', fontSize: '16px', lineHeight: '1.75', color: '#5a4a4a' }}>
               A safe, enabling environment on Telegram and in-person, consisting of diverse people all working together to grow a collaborative system.
             </p>
-            <a href="/community" className="mt-8 btn-orange px-8 py-4 rounded text-sm inline-block">
+            <a href={process.env.NEXT_PUBLIC_COMMUNITY_URL} className="mt-8 btn-orange px-8 py-4 rounded text-sm inline-block">
               Join our Community →
             </a>
           </div>

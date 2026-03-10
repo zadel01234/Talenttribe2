@@ -144,7 +144,7 @@ export default function Register() {
             </button>
       
     }
-    <div className='mt-2 text-center'>Already have an account? <Link href="/login" className='text-red-800'>Login</Link></div>
+              <div className='mt-2 text-center'> Already a Community member? - <Link href="/login" className='text-red-800'>Login</Link></div>
     
            
     </div>

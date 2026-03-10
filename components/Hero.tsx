@@ -80,22 +80,35 @@ export default function Hero() {
             </div>
 
             <p className="anim-fade-up delay-2 mt-8 mb-10 text-gray-300 leading-relaxed max-w-lg" style={{ fontFamily: 'Montserrat', fontSize: '16px', fontWeight: 400 }}>
-              A platform for Oyo students to connect, create, and cultivate a culture of innovation and growth. For both newbies and professionals in the ecosystem.
+              A platform for Oyo Tech Talents to connect, create, and cultivate a culture of innovation and growth. For both newbies and professionals in the ecosystem.
             </p>
 
-            <div className="anim-fade-up delay-3 flex flex-wrap gap-4 mb-12">
-              <a href="/community" className="btn-orange px-8 py-4 rounded text-sm flex items-center gap-2">
-                Join Community
-                <svg className="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5">
-                  <path d="M5 12h14M12 5l7 7-7 7" />
-                </svg>
-              </a>
-              <a
-                href="/donate"
-                style={{ background: 'rgba(245,160,0,0.08)', border: '1px solid rgba(245,160,0,0.2)', color: '#f5a000', fontFamily: 'Space Grotesk', fontWeight: 600, fontSize: '13px', padding: '16px 28px', borderRadius: '4px', letterSpacing: '0.04em', transition: 'all 0.2s', textDecoration: 'none' }}
-              >
-                Donate For a Talent ♥
-              </a>
+            <div className="anim-fade-up delay-3 flex flex-col gap-3 mb-12">
+              {/* Row 1: Join Community + Donate */}
+              <div className="flex flex-wrap gap-4">
+                <a href={process.env.NEXT_PUBLIC_COMMUNITY_URL} className="btn-orange px-8 py-4 rounded text-sm flex items-center gap-2">
+                  Join Community
+                  <svg className="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5">
+                    <path d="M5 12h14M12 5l7 7-7 7" />
+                  </svg>
+                </a>
+                <a
+                  href="/donate"
+                  style={{ background: 'rgba(245,160,0,0.08)', border: '1px solid rgba(245,160,0,0.2)', color: '#f5a000', fontFamily: 'Space Grotesk', fontWeight: 600, fontSize: '13px', padding: '16px 28px', borderRadius: '4px', letterSpacing: '0.04em', transition: 'all 0.2s', textDecoration: 'none' }}
+                >
+                  Donate For a Talent ♥
+                </a>
+              </div>
+
+              {/* Row 2: Become a Member */}
+              <div>
+                <a href="/register" className="btn-orange px-8 py-4 rounded text-sm flex items-center gap-2 w-fit">
+                  Become A Community Member
+                  <svg className="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5">
+                    <path d="M5 12h14M12 5l7 7-7 7" />
+                  </svg>
+                </a>
+              </div>
             </div>
 
             {/* Slide dots */}

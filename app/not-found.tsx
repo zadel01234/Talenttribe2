@@ -13,11 +13,11 @@ export default function NotFound(): JSX.Element {
                 <div style={styles.noise} />
 
                 <div style={styles.content}>
-                    <div style={styles.badge}> Coming Soon</div>
+                    <div style={styles.badge}> Work in Progress</div>
 
                     <h1 style={styles.heading}>
-                        Work in
-                        <span style={styles.accent}> Progress</span>
+                        Coming
+                        <span style={styles.accent}> Soon</span>
                     </h1>
 
                     <p style={styles.subtext}>
